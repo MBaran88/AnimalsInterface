@@ -9,17 +9,17 @@ import com.animals.interfaces.Movable;
 public class Elephant implements Movable,Audible{
     @Override
     public void run() {
-        System.out.println("Elephant: I'm running");
+        System.out.println(this.getClass().getSimpleName() + ": I'm running");
     }
 
     @Override
     public void hide() {
-        System.out.println("Elephant: I'm hiding!");
+        System.out.println(this.getClass().getSimpleName() + ": I'm hiding!");
     }
 
     @Override
     public void makeNoise() {
-        System.out.println("Elephant: I'm tooting!");
+        System.out.println(this.getClass().getSimpleName() + ": I'm tooting!");
 
     }
 }

@@ -14,12 +14,12 @@ public class Dog implements Movable,Audible{
 
     @Override
     public void hide() {
-        System.out.println("Dog: I'm hiding!");
+        System.out.println(this.getClass().getSimpleName() + ": I'm hiding!");
     }
 
     @Override
     public void makeNoise() {
-        System.out.println("Dog: I'm barking!");
+        System.out.println(this.getClass().getSimpleName() + ": I'm barking!");
     }
 }
 
