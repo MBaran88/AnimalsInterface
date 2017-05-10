@@ -3,6 +3,7 @@ package com.animals;
 import com.animals.Animals.Dog;
 import com.animals.Animals.Elephant;
 import com.animals.Animals.Snake;
+import com.animals.interfaces.Audible;
 import com.animals.interfaces.Movable;
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public class Zoo {
     private ArrayList<Snake> snakes = new ArrayList<>();
 
     private ArrayList<Movable> moveables = new ArrayList<>();
+    private ArrayList<Audible> audibles = new ArrayList<>();
 
     public void init() {
 
@@ -31,6 +33,10 @@ public class Zoo {
         moveables.add(dog);
         moveables.add(elephant);
         moveables.add(snake);
+
+        audibles.add(dog);
+        audibles.add(elephant);
+        audibles.add(snake);
     }
 
     public void runAnimalByObjectReference() {
@@ -42,6 +48,23 @@ public class Zoo {
         }
         for (Snake snake : snakes) {
             snake.run();
+        }
+    }
+
+    public void runAnimalsByInterfaceReference() {
+        for (Movable movable : moveables) {
+            movable.run();
+        }
+    }
+
+    public void hideAnimalsByInterfaceReference() {
+        for (Movable movable : moveables) {
+            movable.hide();
+        }
+    }
+    public void makeNoiseAnimalsByInterfaceReference(){
+        for (Audible audible: audibles){
+            audible.makeNoise();
         }
     }
 }

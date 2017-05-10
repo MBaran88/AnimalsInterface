@@ -7,6 +7,9 @@ public class Main {
         Zoo zoo = new Zoo();
         zoo.init();
         zoo.runAnimalByObjectReference();
+        zoo.runAnimalsByInterfaceReference();
+        zoo.hideAnimalsByInterfaceReference();
+        zoo.makeNoiseAnimalsByInterfaceReference();
     }
 
 }
