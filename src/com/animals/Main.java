@@ -12,6 +12,7 @@ public class Main {
         // write your code here
         Zoo zoo = new Zoo();
         zoo.init();
+        zoo.runAnimalByObejectReference();
     }
 
 }
