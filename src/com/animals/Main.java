@@ -22,8 +22,9 @@ public class Main {
         Dog myDog = (Dog) someAnimal;
         myDog.run();
         myDog.hide();
+    }
+        public void doSomething (Audible audible){audible.makeNoise();}//Classic example of an instance
 
         // System.out.println(someAnimal.getClass().getCanonicalName());
     }
 
-}
