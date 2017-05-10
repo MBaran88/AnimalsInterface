@@ -16,7 +16,16 @@ public class Zoo {
     private ArrayList<Elephant> elephants = new ArrayList<>();
     private ArrayList<Snake> snakes = new ArrayList<>();
 
+    public ArrayList<Movable> getMoveables() {
+        return moveables;
+    }
+
     private ArrayList<Movable> moveables = new ArrayList<>();
+
+    public ArrayList<Audible> getAudibles() {
+        return audibles;
+    }
+
     private ArrayList<Audible> audibles = new ArrayList<>();
 
     public void init() {

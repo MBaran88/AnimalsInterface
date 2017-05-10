@@ -1,5 +1,8 @@
 package com.animals;
 
+import com.animals.Animals.Dog;
+import com.animals.interfaces.Audible;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -14,6 +17,13 @@ public class Main {
         System.out.println("-----------------------------");
         zoo.makeNoiseAnimalsByInterfaceReference();
         System.out.println("-----------------------------");
+        Audible someAnimal = zoo.getAudibles().get(0);
+
+        Dog myDog = (Dog)someAnimal;
+        myDog.run();
+        myDog.hide();
+
+        // System.out.println(someAnimal.getClass().getCanonicalName());
     }
 
 }
