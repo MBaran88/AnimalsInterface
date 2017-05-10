@@ -71,8 +71,9 @@ public class Zoo {
             movable.hide();
         }
     }
-    public void makeNoiseAnimalsByInterfaceReference(){
-        for (Audible audible: audibles){
+
+    public void makeNoiseAnimalsByInterfaceReference() {
+        for (Audible audible : audibles) {
             audible.makeNoise();
         }
     }

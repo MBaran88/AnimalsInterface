@@ -6,7 +6,7 @@ import com.animals.interfaces.Movable;
 /**
  * Created by RENT on 2017-05-10.
  */
-public class Snake implements Movable,Audible {
+public class Snake implements Movable, Audible {
     @Override
     public void run() {
         System.out.println(this.getClass().getSimpleName() + ": I'm running");

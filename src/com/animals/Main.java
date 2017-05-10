@@ -19,7 +19,7 @@ public class Main {
         System.out.println("-----------------------------");
         Audible someAnimal = zoo.getAudibles().get(0);
 
-        Dog myDog = (Dog)someAnimal;
+        Dog myDog = (Dog) someAnimal;
         myDog.run();
         myDog.hide();
 
