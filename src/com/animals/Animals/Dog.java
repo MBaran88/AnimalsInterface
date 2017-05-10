@@ -8,7 +8,7 @@ import com.animals.interfaces.Movable;
 public class Dog implements Movable{
     @Override
     public void run() {
-        System.out.println(this.getClass().getSimpleName() + "I'm running");
+        System.out.println(this.getClass().getSimpleName() + ": I'm running");
     }
 
     @Override

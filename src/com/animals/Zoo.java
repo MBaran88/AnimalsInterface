@@ -3,6 +3,7 @@ package com.animals;
 import com.animals.Animals.Dog;
 import com.animals.Animals.Elephant;
 import com.animals.Animals.Snake;
+import com.animals.interfaces.Movable;
 
 import java.util.ArrayList;
 
@@ -14,22 +15,33 @@ public class Zoo {
     private ArrayList<Elephant> elephants = new ArrayList<>();
     private ArrayList<Snake> snakes = new ArrayList<>();
 
+    private ArrayList<Movable> moveables = new ArrayList<>();
+
     public void init() {
 
-        dogs.add(new Dog());
+        Dog dog = new Dog();
+        dogs.add(dog);
 
-        elephants.add(new Elephant());
+        Elephant elephant = new Elephant();
+        elephants.add(elephant);
 
-        snakes.add(new Snake());
+        Snake snake = new Snake();
+        snakes.add(snake);
+
+        moveables.add(dog);
+        moveables.add(elephant);
+        moveables.add(snake);
     }
-    public void runAnimalByObejectReference(){
-        for (Dog dog:dogs){
+
+    public void runAnimalByObjectReference() {
+        for (Dog dog : dogs) {
             dog.run();
         }
-        for (Elephant elephant:elephants){
+        for (Elephant elephant : elephants) {
             elephant.run();
         }
-        for (Snake snake:snakes) {
+        for (Snake snake : snakes) {
             snake.run();
         }
-}}
+    }
+}
